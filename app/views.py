@@ -1,8 +1,10 @@
 from django.shortcuts import render
 
 from .models import Product
+
+
 def Homeview(request):
-    return render(request,"home.html")
+    return render(request,"index.html")
 
 def CreateView(name, category, sku, description, price, stock_quantity):
     product = Product(
