@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from models import Product
+from .models import Product
 
 def CreateView(name, category, sku, description, price, stock_quantity):
     product = Product(
